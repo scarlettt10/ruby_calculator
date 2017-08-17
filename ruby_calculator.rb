@@ -8,14 +8,13 @@ require 'pry'
 #error checking
 #user input and modifiers should be checkd for proper input
 #let the user add more than num + num (num+num+num etc)
-# use +-*/
 #have a 'clear' function
 
 
 
 def calc
     puts "Welcome to Calc"
-    puts ""
+    puts "press 'q' to quit"
   
     puts "Please enter the first number"
     n1 = gets.to_i()
@@ -44,12 +43,14 @@ def calc
           puts "#{n1} * #{n2} = #{multiply}"
         when  "/"
           puts "#{n1} / #{n2} = #{divide} "
+        when "q"
+          exit
         else
           puts "invalid input"
       end
     calc
   end
   calc
-  gets()
+ 
   
   
