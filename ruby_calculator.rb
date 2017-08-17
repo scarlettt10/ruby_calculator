@@ -35,6 +35,8 @@ def calc
   
     case input
     
+        when "q"
+          exit
         when  "-"
           puts "#{n1} - #{n2} = #{subtract}"
         when  "+"
@@ -43,8 +45,6 @@ def calc
           puts "#{n1} * #{n2} = #{multiply}"
         when  "/"
           puts "#{n1} / #{n2} = #{divide} "
-        when "q"
-          exit
         else
           puts "invalid input"
       end
